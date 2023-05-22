@@ -1,0 +1,61 @@
+{
+  "teamName": "ZVO",
+  "sizeTeam": 5,
+  "team": [
+    {
+      "AIM": 10.0,
+      "Deduction": 10.0,
+      "GamingExp": 10.0,
+      "MoralPsychoState": 0.0,
+      "name": "Stepan Stepanov",
+      "Reaction": 10.0,
+      "Tactics": 10.0,
+      "team": "ZVO",
+      "Teamwork": 10.0
+    },
+    {
+      "AIM": 10.0,
+      "Deduction": 10.0,
+      "GamingExp": 10.0,
+      "MoralPsychoState": 0.0,
+      "name": "Stepan Stepanov",
+      "Reaction": 10.0,
+      "Tactics": 10.0,
+      "team": "ZVO",
+      "Teamwork": 10.0
+    },
+    {
+      "AIM": 10.0,
+      "Deduction": 10.0,
+      "GamingExp": 10.0,
+      "MoralPsychoState": 0.0,
+      "name": "Stepan Stepanov",
+      "Reaction": 10.0,
+      "Tactics": 10.0,
+      "team": "ZVO",
+      "Teamwork": 10.0
+    },
+    {
+      "AIM": 10.0,
+      "Deduction": 10.0,
+      "GamingExp": 10.0,
+      "MoralPsychoState": 0.0,
+      "name": "Stepan Stepanov",
+      "Reaction": 10.0,
+      "Tactics": 10.0,
+      "team": "ZVO",
+      "Teamwork": 10.0
+    },
+    {
+      "AIM": 10.0,
+      "Deduction": 10.0,
+      "GamingExp": 10.0,
+      "MoralPsychoState": 0.0,
+      "name": "Stepan Stepanov",
+      "Reaction": 10.0,
+      "Tactics": 10.0,
+      "team": "ZVO",
+      "Teamwork": 10.0
+    }
+  ]
+}

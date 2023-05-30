@@ -18,12 +18,12 @@ public:
 	virtual void Print() = 0;
 
 	std::string team;			// Команда игрока
-	std::string nickName;		// Игровой никней игрока
+	std::string nickName;		// Игровой никнейм игрока
 
 	double reaction;			// Реакция
-	double aim;					// Уменее стрельбы
+	double aim;					// Умение стрельбы
 	double tactics;				// Знание тактик и позиций 
-	double teamwork;			// Уменее работать в команде
+	double teamwork;			// Умение работать в команде
 	double deduction;			// Умение "читать" игровую ситуацию
 	double gamingExp;			// Игровой опыт
 	double moralPsychoState;	// Моральное состояние игрока

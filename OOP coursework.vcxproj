@@ -129,11 +129,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Esportsman.cpp" />
+    <ClCompile Include="Match.cpp" />
+    <ClCompile Include="MatchHandler.cpp" />
     <ClCompile Include="OOP coursework.cpp" />
     <ClCompile Include="JsonWorker.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="ResultsTable.cpp" />
     <ClCompile Include="TeamStandart.cpp" />
     <ClCompile Include="TeamFactory.cpp" />
+    <ClCompile Include="Tests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="jsonF.json" />
@@ -142,9 +146,13 @@
   <ItemGroup>
     <ClInclude Include="Esportsman.h" />
     <ClInclude Include="JsonWorker.h" />
+    <ClInclude Include="Match.h" />
+    <ClInclude Include="MatchHandler.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="ResultsTable.h" />
     <ClInclude Include="Team.h" />
     <ClInclude Include="TeamFactory.h" />
+    <ClInclude Include="Tests.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

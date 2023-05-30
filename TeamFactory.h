@@ -8,7 +8,7 @@ public:
 	virtual ~TeamFactory() {}
 };
 
-class StandartTeamFactory : public TeamFactory {
+class StandardTeamFactory : public TeamFactory {
 public:
 	Team* CreateTeam() {
 		return new TeamStandard();

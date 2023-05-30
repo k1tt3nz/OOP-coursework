@@ -11,17 +11,25 @@ public:
 
 	virtual void SetTeamName(std::string tName) = 0;
 	virtual void SetCommandStaff(std::vector<Player> commandStaff) = 0;
+
+	virtual std::string GetTeamName() = 0;
+	virtual std::vector<Player> CommandStaff() = 0;
 };
 
-class TeamStandart : public Team {
+class TeamStandard : public Team {
 public:
 	void Print();
 
 	void SetTeamName(std::string tName);
 	void SetCommandStaff(std::vector<Player> commandStaff);
-	TeamStandart(std::string teamName, std::vector<Player> commandStaffP);
-	TeamStandart(std::vector<Player> commandStaffP);
-	TeamStandart();
+
+	std::string GetTeamName();
+	std::vector<Player> CommandStaff();
+
+	TeamStandard(std::string teamName, std::vector<Player> commandStaffP);
+	TeamStandard(std::vector<Player> commandStaffP);
+	TeamStandard(nlohmann::json j);
+	TeamStandard();
 
 private:
 	std::string teamName;

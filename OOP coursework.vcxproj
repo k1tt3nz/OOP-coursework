@@ -132,7 +132,7 @@
     <ClCompile Include="OOP coursework.cpp" />
     <ClCompile Include="JsonWorker.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Team.cpp" />
+    <ClCompile Include="TeamStandart.cpp" />
     <ClCompile Include="TeamFactory.cpp" />
   </ItemGroup>
   <ItemGroup>

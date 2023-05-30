@@ -14,7 +14,7 @@
 void f() {
     Player p{ "Степан Степанов","Zтепан",10,10,10,10,10,10,0 };
     std::vector<Player> team = { p,p,p,p,p };
-    TeamStandart t("t", team);
+    TeamStandard t("t", team);
     t.Print();
 }
 
@@ -58,27 +58,18 @@ int main()
     //std::string tName = js["teamName"].get<std::string>();
     StandartTeamFactory* sf = new StandartTeamFactory;
 
-    Team* t = sf->CreateTeam();
-    t->SetTeamName(js["teamName"].get<std::string>());
+    Team* t = sf->CreateTeam(js);
+    //t->SetTeamName(js["teamName"].get<std::string>());
 
-    std::vector <Player> v;
-    for (int i = 0; i < js["sizeTeam"].get<int>(); i++) {
-        Player p{};
-        p.nickName = js["team"][i]["name"].get<std::string>(),
-        p.team = js["team"][i]["team"].get<std::string>(),
-        p.reaction = js["team"][i]["Reaction"].get<double>(),
-        p.aim = js["team"][i]["AIM"].get<double>(),
-        p.tactics = js["team"][i]["Tactics"].get<double>(),
-        p.teamwork = js["team"][i]["Teamwork"].get<double>(),
-        p.deduction = js["team"][i]["Deduction"].get<double>(),
-        p.gamingExp = js["team"][i]["GamingExp"].get<double>(),
-        p.moralPsychoState = js["team"][i]["MoralPsychoState"].get<double>(),
+    //std::vector <Player> v;
+    //for (int i = 0; i < js["sizeTeam"].get<int>(); i++) {
+    //    Player p{ js["team"][i]};
+    //    v.push_back(p);
+    //}
 
-        v.push_back(p);
-    }
-
-    t->SetCommandStaff(v);
+    //t->SetCommandStaff(v);
     t->Print();
+
 
     //JsonWorker::Writing2File("test.json",js);
     ////Player p{js};

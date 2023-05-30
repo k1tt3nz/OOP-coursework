@@ -15,6 +15,7 @@
 #include "dependencies/include/nlohmann/json.hpp"
 #include "JsonWorker.h"
 #include "Match.h"
+#include "ResultsTable.h"
 
 
 
@@ -64,6 +65,17 @@ void Tests::test_create_math()
 
     Team* t = mm.GetTeam1();
     t->Print();
+}
+
+void Tests::test_create_resultTable()
+{
+    std::string nt1 = "Команда 1";
+    std::vector<std::string> tr1 = { "Победа", "Поражение","Поражение" ,"Поражение" ,"Победа" };
+
+    std::string nt2 = "Команда 2";
+    std::vector<std::string> tr2 = { "Победа", "Победа","Победа", "Победа","Поражение" };
+    ResultsTable rt{nt1,tr1,nt2,tr2};
+    rt.Print();
 }
 
 #endif // !TEST_CPP

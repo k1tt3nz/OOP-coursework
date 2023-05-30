@@ -9,5 +9,7 @@ public:
     void test_create_player();
 
     void test_create_math();
+
+    void test_create_resultTable();
 };
 

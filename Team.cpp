@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Team.h"
 
-void Team::Print()
+void TeamStandart::Print()
 {
     std::cout << "Команда: " << teamName << "\n";
     std::cout << "Состав: " << "\n";
@@ -11,26 +11,26 @@ void Team::Print()
     }
 }
 
-Team::Team(std::string teamName, std::vector<Player> commandStaffP)
+TeamStandart::TeamStandart(std::string teamName, std::vector<Player> commandStaffP)
 {
 	this->teamName = teamName;
 	this->commandStaff = commandStaffP;
 }
-Team::Team()
+TeamStandart::TeamStandart()
 {
     
 }
-void Team::SetCommandStaff(std::vector<Player> commandStaff)
+void TeamStandart::SetCommandStaff(std::vector<Player> commandStaff)
 {
     this->commandStaff = commandStaff;
 }
-void Team::SetTeamName(std::string tName)
+void TeamStandart::SetTeamName(std::string tName)
 {
     this->teamName = tName;
 }
 
 
-Team::Team(std::vector<Player> commandStaffP)
+TeamStandart::TeamStandart(std::vector<Player> commandStaffP)
 {
 	this->teamName = "Unknown";
 	this->commandStaff = commandStaffP;

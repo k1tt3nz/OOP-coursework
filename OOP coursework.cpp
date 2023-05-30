@@ -5,6 +5,7 @@
 
 #include "Player.h"
 #include "Team.h"
+#include "TeamFactory.h"
 #include "dependencies/include/nlohmann/json.hpp"
 #include "JsonWorker.h"
 
@@ -13,7 +14,7 @@
 void f() {
     Player p{ "Степан Степанов","Zтепан",10,10,10,10,10,10,0 };
     std::vector<Player> team = { p,p,p,p,p };
-    Team t("t", team);
+    TeamStandart t("t", team);
     t.Print();
 }
 
@@ -55,8 +56,10 @@ int main()
 
     
     //std::string tName = js["teamName"].get<std::string>();
-    Team t{};
-    t.SetTeamName(js["teamName"].get<std::string>());
+    StandartTeamFactory* sf = new StandartTeamFactory;
+
+    Team* t = sf->CreateTeam();
+    t->SetTeamName(js["teamName"].get<std::string>());
 
     std::vector <Player> v;
     for (int i = 0; i < js["sizeTeam"].get<int>(); i++) {
@@ -74,8 +77,8 @@ int main()
         v.push_back(p);
     }
 
-    t.SetCommandStaff(v);
-    t.Print();
+    t->SetCommandStaff(v);
+    t->Print();
 
     //JsonWorker::Writing2File("test.json",js);
     ////Player p{js};
